@@ -54,11 +54,11 @@ urlpatterns = [
     # path('util/', include('util.urls')),
     # path('well/', include('well.urls')),
 
-    path('hello/', include('hello.urls')),
-    path('autos/', include('autos.urls')),
-    path('polls/', include('polls.urls')),
-    path('cats/', include('cats.urls')),
-    path('ads/', include('ads.urls')),
+    path('hello/', include('hello.urls', namespace='hello')),
+    path('autos/', include('autos.urls', namespace='autos')),
+    path('polls/', include('polls.urls', namespace='polls')),
+    path('cats/', include('cats.urls', namespace='cats')),
+    path('ads/', include('ads.urls', namespace='ads')),
 ]
 
 
