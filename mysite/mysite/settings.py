@@ -46,10 +46,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'social_django',
     'home.apps.HomeConfig',
-    'ads.apps.AdsConfig',
 
     # Sample Applications - don't copy
-    'hello.apps.HelloConfig',
+
     # 'users.apps.UsersConfig',
     # 'bookone.apps.BookoneConfig',
     # 'bookmany.apps.BookmanyConfig',
@@ -71,14 +70,17 @@ INSTALLED_APPS = [
     # 'rest.apps.RestConfig',
     # 'favs.apps.FavsConfig',
     # 'favsql.apps.FavsqlConfig',
-    'autos.apps.AutosConfig',
     # 'usermodel.apps.UsermodelConfig',
     # 'chat.apps.ChatConfig',
     # 'util.apps.UtilConfig',
     # 'well.apps.WellConfig',
+
+    'hello.apps.HelloConfig',
+    'ads.apps.AdsConfig',
+    'autos.apps.AutosConfig',
     'cats.apps.CatsConfig',
     'polls.apps.PollsConfig',
-    # 'unesco.apps.UnescoConfig',  # Add
+    'unesco.apps.UnescoConfig',  # Add
 ]
 
 # When we get to crispy forms :)

@@ -22,8 +22,8 @@ from django.contrib.auth import views as auth_views
 from django.views.static import serve
 
 urlpatterns = [
-    #path('', include('home.urls')),  # Change to ads.urls
-    path('', include('ads.urls')),
+    path('', include('home.urls')),  # Change to ads.urls
+    #path('', include('ads.urls')),
     path('admin/', admin.site.urls),  # Keep
     path('accounts/', include('django.contrib.auth.urls')),  # Keep
     url(r'^oauth/', include('social_django.urls', namespace='social')),  # Keep
@@ -54,11 +54,11 @@ urlpatterns = [
     # path('util/', include('util.urls')),
     # path('well/', include('well.urls')),
 
-    # path('hello/', include('hello.urls')),
-    # path('autos/', include('autos.urls')),
-    # path('polls/', include('polls.urls')),
-    # path('cats/', include('cats.urls')),
-    ##path('ads/', include('ads.urls')),
+    path('hello/', include('hello.urls')),
+    path('autos/', include('autos.urls')),
+    path('polls/', include('polls.urls')),
+    path('cats/', include('cats.urls')),
+    path('ads/', include('ads.urls')),
 ]
 
 
