@@ -2,6 +2,27 @@
 {% block content %}
     <h1>Welcome to {{ settings.APP_NAME }}</h1>
     <p>
-    Hello world.
+    <ul>
+      {% url 'ads:all' as adsurl %}
+      <li id="a" {% if request.get_full_path == adsurl %}class="active"{% endif %}>
+          <a href="{% url 'ads:all' %}">Ads </a></li>
+
+      {% url 'autos:all' as autosurl %}
+      <li {% if request.get_full_path == autosurl %}class="active"{% endif %}>
+          <a href="{% url 'autos:all' %}">Autos</a></li>
+
+      {% url 'cats:all' as catsurl %}
+      <li {% if request.get_full_path == catsurl %}class="active"{% endif %}>
+          <a href="{% url 'cats:all' %}">Cats</a></li>
+
+      {% url 'hello:sessfun' as hellourl %}
+      <li {% if request.get_full_path == hellourl %}class="active"{% endif %}>
+          <a href="{% url 'hello:sessfun' %}">Hello</a></li>
+
+      {% url 'polls:all' as pollsurl %}
+      <li {% if request.get_full_path == pollsurl %}class="active"{% endif %}>
+          <a href="{% url 'polls:all' %}">Polls</a></li>
+
+    </ul>
     </p>
 {% endblock %}
