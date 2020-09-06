@@ -71,10 +71,10 @@ INSTALLED_APPS = [
     # 'favs.apps.FavsConfig',
     # 'favsql.apps.FavsqlConfig',
     # 'usermodel.apps.UsermodelConfig',
-    # 'chat.apps.ChatConfig',
     # 'util.apps.UtilConfig',
     # 'well.apps.WellConfig',
 
+    'chat.apps.ChatConfig',
     'hello.apps.HelloConfig',
     'ads.apps.AdsConfig',
     'autos.apps.AutosConfig',

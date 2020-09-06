@@ -50,10 +50,10 @@ urlpatterns = [
     # path('rest/', include('rest.urls')),
     # path('autos/', include('autos.urls')),
     # path('usermodel/', include('usermodel.urls')),
-    # path('chat/', include('chat.urls')),
     # path('util/', include('util.urls')),
     # path('well/', include('well.urls')),
 
+    path('chat/', include('chat.urls')),
     path('hello/', include('hello.urls', namespace='hello')),
     path('autos/', include('autos.urls', namespace='autos')),
     path('polls/', include('polls.urls', namespace='polls')),
