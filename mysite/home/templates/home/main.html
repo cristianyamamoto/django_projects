@@ -15,6 +15,10 @@
       <li {% if request.get_full_path == catsurl %}class="active"{% endif %}>
           <a href="{% url 'cats:all' %}">Cats</a></li>
 
+      {% url 'chat:talk' as chaturl %}
+      <li {% if chaturl in request.get_full_path %}class="active"{% endif %}>
+          <a href="{% url 'chat:talk' %}">Chat</a></li>
+
       {% url 'hello:sessfun' as hellourl %}
       <li {% if request.get_full_path == hellourl %}class="active"{% endif %}>
           <a href="{% url 'hello:sessfun' %}">Hello</a></li>
